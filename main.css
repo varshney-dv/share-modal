@@ -69,25 +69,22 @@
     opacity: 1;
     pointer-events: initial;
   }
-  @media (max-width:680px) {
-    .wrapper{
-      background-color: yellow;
-    }
+  @media (max-width:680px) { 
     .card{
-        margin-left: 5%;
-        margin-top: 25%;
+        margin-left: 15% !important;
+        margin-top: 25% !important;
     }
     .modal{
-        margin-top: 25%;
-        margin-left: 4%;
+        margin-top: 35% !important;
+        margin-left: 10% !important;
     }
     .circle1{
-        top: 10%;
-        left: 10%;
+        top: 10% !important;
+        left: 10% !important;
     }
     .circle2{
-        top: 20%;
-        left: 55%;
+        top: 20% !important;
+        left: 55% !important;
     }
-
+    
 }
