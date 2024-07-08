@@ -71,20 +71,20 @@
   }
   @media (max-width:680px) {
     .card{
-        margin-left: 15%;
+        margin-left: 5%;
         margin-top: 25%;
     }
     .modal{
         margin-top: 25%;
-        margin-left: 15%;
+        margin-left: 4%;
     }
     .circle1{
         top: 10%;
-        left: 20%;
+        left: 10%;
     }
     .circle2{
         top: 20%;
-        left: 50%;
+        left: 55%;
     }
 
 }
