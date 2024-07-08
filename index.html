@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="wrapper bg-black h-[100vh] w-[100vw] overflow-x-hidden overflow-y-hidden  relative ">
+        
+        <div class="flex absolute w-[300px] h-[320px]  mt-[150px] ml-[40%] 
+        flex-col items-center gap-2 rounded-xl card  ">
+            <img src="./assets/profile-photo.png" alt="Profile Photo" class="h-[120px] w-[120px] rounded-full mt-8 mb-2">
+            <h2 class="text-[20px] text-white">Divyanshu Varshney</h2>
+            <div class="text-white text-[14px]">Web Developer, DSA Coder</div>
+            <div class="flex gap-4  p-2 mt-2">
+                <button class="text-white border-[1px] px-2 cursor-pointer btn-share" onclick="openmodal()" >Share Profile</button>
+                <button class="text-white border-[1px] px-3" ><a href="https://www.linkedin.com/in/divyanshu-varshney-91835128a/" target="_blank">Follow Me</a></button>
+            </div>
+        </div>
+        <div class=" circle1 "></div>
+        <div class="circle2"></div>
+
+            <!-- Share-profile-modal -->
+
+    <div class="card-share-profile bg-black opacity-80 h-[200px] w-[350px] 
+    absolute mt-[200px] ml-[38%] border-2  modal">
+        <div class="flex justify-between mx-3 mt-1">
+            <p class="text-white font-extrabold text-xl">Share My Profile</p>
+            <button onclick="closemodal()">❌</button></div>
+        <hr class="color-white border-dotted">
+        <p class="text-white pt-6 pl-4 font-semibold">Share via</p>
+        <div class="flex gap-5 justify-around mt-6 ">
+            <!-- <a href="#" class="icon text-blue-500 font-semibold border-2 bg-white " id="facebook">
+                facebook
+              </a>
+
+              <a href="#" class="icon text-blue-500 font-semibold  border-2 bg-white" id="facebook">
+                Linkedin
+              </a> -->
+              <div class="border-2 p-1.5 rounded-full border-pink-800 
+               shadow-pink-300 shadow-[0px_0px_1px_2px_rgba(0,0,0,0.3)] hover:bg-pink-800  text-pink-800  hover:text-white">
+                <a href="https://www.instagram.com/varshney__dv/" target="_blank" class="icon " id="insta">
+                    <i class="fa-brands fa-instagram text-[27px]"></i>
+                  </a>
+              </div>
+              <div class="border-2 p-1.5 rounded-full border-green-600 
+              shadow-green-300 shadow-[0px_0px_1px_2px_rgba(0,0,0,0.3)] hover:bg-green-600  text-green-600  hover:text-white">
+               <a href="https://wa.me/+918077925406?text=Hello!" target="_blank" class="icon " id="whatsapp">
+                   <i class="fa-brands fa-whatsapp text-[27px]"></i>
+                 </a>
+             </div>
+             <div class="border-2 p-1.5 rounded-full border-blue-600 
+             shadow-blue-200 shadow-[0px_0px_1px_2px_rgba(0,0,0,0.3)] hover:bg-blue-600 text-white  hover:text-white">
+              <a href="https://www.linkedin.com/in/divyanshu-varshney-91835128a/" target="_blank" class="icon " id="linkedin">
+                  <i class="fa-brands fa-linkedin text-[27px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="overlay" onclick="closemodal()"></div>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</body>
+</html>

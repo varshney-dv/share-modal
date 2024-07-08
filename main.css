@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    z-index: 2;
+    background-color: rgba(48, 44, 44, 0.438);
+}
+.circle1 {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: circle1Animate 15s infinite;
+  }
+  
+  @keyframes circle1Animate {
+    50% {
+      left: 33%;
+      top: 4%;
+      scale: 1.11;
+    }
+  }
+
+  .circle2 {
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: circle2Animate 8s infinite;
+  }
+  @keyframes circle2Animate {
+    50% {
+      bottom: 6%;
+      right: 31%;
+    }
+  }
+.modal{
+    scale: 0;
+    transition:0.5s ease;
+    z-index: 3;
+}
+.active{
+    scale:1
+}
+.overlay {
+    position: fixed;
+    opacity: 0;
+    background-color: #fae9e923;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition:0.5 ease;
+    
+  }
+  .overlayactive{
+    opacity: 1;
+    pointer-events: initial;
+  }
+  @media (max-width:680px) {
+    .card{
+        margin-left: 27%;
+        margin-top: 30%;
+    }
+    .modal{
+        margin-top: 40%;
+        margin-left: 22%;
+    }
+    .circle1{
+        top: 10%;
+        left: 20%;
+    }
+    .circle2{
+        top: 20%;
+        left: 50%;
+    }
+
+}
